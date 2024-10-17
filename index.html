@@ -4,22 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="portfolio.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo"><span>Timi</span>lehin</a>
-        <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#about" >About</a>
-            <a href="#" >Projects</a>
-        </nav>
+    <!-- header starts here  -->
+    <header class="header navbar navbar-expand-lg">
+        <div class="container ">
+            <a href="#" class="logo navbar-brand"><span>Timi</span>lehin</a>
 
-        <a href="#contact" class="contact">Contact Me</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent"">
+            <nav class="navbar navbar-nav mx-auto mb-2 mb-lg-0 align-items-center">
+                <a href="#" class="active mb-4 fs-5">Home</a>
+                <a href="#about" class="mb-4 fs-5">About</a>
+                <a href="#project" class="mb-4 fs-5">Projects</a>
+            </nav>
+            <a href="#contact" class="contact justify-self-center ms-5 ms-lg-auto mb-2  text-center btn btn-light text-black ">Contact Me</a>
+
+        </div>
     </header>
+    <!-- header ends here -->
 
-    <section class="home">
+    <!-- Home starts here  -->
+    <section class="home mb-3">
         <div class="home-content">
             <h3>Hi</h3>
 
@@ -33,14 +45,17 @@
             </div>
         </div>
         <div class="img-box">
-            <img src="WhatsApp Image 2024-09-24 at 11.03.28 AM.jpeg" alt="">
+            <img src="ava.jpg" alt="">
         </div>
     </section>
+    <!-- home section stops here -->
 
-    <section class="about" id="about">
+    <!-- About section starts here  -->
+
+    <section class="about " id="about">
 
         <div class="about-img">
-            <img src="WhatsApp Image 2024-09-24 at 11.03.28 AM.jpeg" alt="">
+            <img src="ava.jpg" alt="">
         </div>
         <div class="about-content">
             <h2 class="heading"> About <span>Me</span></h2>
@@ -51,17 +66,63 @@
 
     </section>
 
+    <!-- About section ends here  -->
+
+    <!-- project section starts here -->
+    <section id="project" class="p-3 text-center">
+        <h1 class="heading">My Pro<span>jects</span></h1>
+
+        <div class="projects-wrapper">
+            <div class="projects-cards">
+                <img src="project-image/Capture.PNG" alt="My project logo" class="rounded-2">
+                <h3>My Portfolio Project</h3>
+                <p>
+                    A personal portfolio website showcasing my web development skills and projects. Built with a clean, responsive design, it highlights my expertise in front-end development, featuring interactive elements, project showcases, and contact details, all optimized for a smooth user experience across devices
+                </p>
+
+                <div class="btn-group w-100 mt-3">
+                    <a href="" class="live-demo-btn me-5 rounded btn btn-primary ">Live Demo</a>
+                    <a href="htpps://github/timilovic   " class="github-link-btn rounded btn btn-primary ms-5">Github Link</a>
+                </div>
+            </div>
+            <div class="projects-cards">
+                <img src="project-image/social-links.PNG" alt="social-link" class="rounded-2">
+
+                <h3>Social Link Project</h3>
+                <p>A sleek, user-friendly social link website designed to centralize and showcase all your online profiles. Built with responsive design, it ensures easy access to your social media, portfolio, and contact information from any device. Perfect for personal branding and online visibility.</p>
+
+                <div class="btn-group mt-5  w-100">
+                    <a href="https://register-five-theta.vercel.app/" class="live-demo-btn btn btn-primary  rounded me-5">Live Demo</a>
+                    <a href="htpps://github/timilovic   " class="github-link-btn btn btn-primary  rounded ms-5">Github Link</a>
+                </div>
+            </div>
+            <div class="projects-cards">
+                <img src="project-image/bootstrap.PNG" alt="My project logo" class="rounded-2">
+
+                <h3>Bootstrap Camp</h3>
+                <p>A responsive website built using 90% Bootstrap, designed to ensure seamless performance across all devices. It features a modern, clean layout with optimized components like grids, navigation, and forms, providing a user-friendly experience while maintaining quick load times and accessibility.</p>
+
+                <div class="btn-group mt-3 w-100">
+                    <a href="" class="live-demo-btn btn btn-primary me-5 rounded">Live Demo</a>
+                    <a href="htpps://github/timilovic   " class="github-link-btn btn btn-primary ms-5 rounded">Github Link</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- project section ends here -->
+
     <section class="contact-form">
         <h2 class="contact-me" id="contact">Contact <span>Me</span></h2>
 
-        <form action="#">
+        <form action="#" class="p-md-0 p-3 ">
 
             <div class="input-box">
                 <input type="text" placeholder="Full Name">
                 <input type="email" placeholder="Email">
             </div>
 
-            <div class="input-box">
+            <div class="input-box ">
                 <input type="number" placeholder="Phone Number">
                 <input type="text" placeholder="Subject">
             </div>
@@ -111,5 +172,9 @@
 
         <p class="copyright">&copy;2023 Timilehin | All Rights Reserved</p>
     </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
